@@ -1,0 +1,96 @@
+@import "src/components/navigation/navigation.style";
+@import "src/components/search-bar/search-bar.styles";
+.header {
+  position: relative;
+  padding: 0 2rem 0 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+  }
+
+  &-top {
+    height: 3rem;
+    background-color: var(--color-primary);
+    text-align: center;
+    line-height: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+  }
+
+  &__logo {
+    max-width: 25rem;
+  }
+
+  &__item {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    max-height: 100%;
+
+    & a {
+      text-decoration: none;
+      color: var(--color-black);
+    }
+
+    &--logoBox {
+      justify-self: left;
+      @media only screen and (max-width: $bp-medium) {
+        padding-left: 1rem;
+      }
+
+    }
+
+    &--navigation {
+      grid-column: 5/6;
+      padding: 0 3rem;
+      border-left: var(--line);
+      border-right: var(--line);
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-column: 2/3;
+      }
+    }
+
+    &--nav1 {
+      grid-column: 3/4;
+    }
+
+    &--nav1, &--nav2, &--nav3, &--nav4, {
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+
+    &--nav5 {
+      justify-self: flex-end;
+      width: 95%;
+      align-items: center;
+      grid-column: 8/10;
+      display: flex;
+      justify-content: space-between;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+        grid-column: 3/4;
+      }
+
+      @media only screen and (max-width: $bp-medium-2) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 80%;
+      }
+
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+  }
+}
+
+
