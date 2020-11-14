@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import Story from "../../components/story-swiper/story-swiper.component";
 
-const HomePage = () => (
-  <React.Fragment>
-      <h1>this is home page</h1>
-  </React.Fragment>
-);
+const HomePage = () => {
+    return (
+        <React.Fragment>
+            <Story/>
+
+        </React.Fragment>
+    )
+};
 
 export default HomePage;

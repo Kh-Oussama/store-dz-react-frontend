@@ -4,6 +4,7 @@ import SearchBar from "../../search-bar/search-bar.component";
 
 const Dropdown = ({dropdownState}) => (
     <div className="navigation__dropdown" style={{
+        height : dropdownState ? '40rem' : '0',
         visibility: dropdownState ? 'visible' : 'hidden',
         opacity: dropdownState ? '1' : '0',
         zIndex: dropdownState ? '1' : '-1',

@@ -15,6 +15,7 @@
     line-height: 3rem;
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
+    color: var(--color-black);
   }
 
   &__logo {
@@ -22,9 +23,10 @@
   }
 
   &__item {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     max-height: 100%;
+    font-weight: 700;
 
     & a {
       text-decoration: none;
@@ -55,14 +57,21 @@
     }
 
     &--nav1, &--nav2, &--nav3, &--nav4, {
+      margin-top: 2rem;
       @media only screen and (max-width: $bp-medium) {
         display: none;
       }
     }
 
+    &--nav2 {
+      & a {
+        color: var(--color-primary-dark);
+      }
+    }
+
     &--nav5 {
       justify-self: flex-end;
-      width: 95%;
+      width: 65%;
       align-items: center;
       grid-column: 8/10;
       display: flex;
