@@ -1,0 +1,21 @@
+.features-section {
+  height: 20rem;
+  border: var(--line);
+  text-align: center;
+display: flex;
+justify-content: center;
+  align-items: center;
+  & .bigTitle {
+    height: 20rem;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    text-transform: capitalize;
+    margin-top: 5rem;
+
+    &__gold{
+      color: var(--color-primary);
+    }
+  }
+
+}

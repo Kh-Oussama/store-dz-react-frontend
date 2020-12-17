@@ -1,0 +1,81 @@
+.menu-item {
+ width: 100%;
+  height: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--line);
+  padding: 5rem;
+  overflow: hidden;
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem;
+    position: relative;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & .content {
+      opacity: .9;
+    }
+  }
+
+  .content {
+    height: 9rem;
+    width: 20rem;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: white;
+    opacity: .6;
+    position: absolute;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 6rem;
+      width: 20rem;
+      padding: 2rem;
+      position: absolute;
+      bottom: 3.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 1;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 17rem;
+    }
+
+    .title {
+      font-weight: bold;
+      margin-bottom: .6rem;
+      font-size: 2rem;
+      color: #4a4a4a;
+      text-transform: uppercase;
+
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.8rem;
+        margin: 0;
+      }
+
+    }
+
+    .subtitle {
+      //font-weight: lighter;
+      font-size: 1.6rem;
+      font-weight: bold;
+
+    }
+  }
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
