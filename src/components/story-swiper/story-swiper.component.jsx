@@ -22,6 +22,7 @@ const Story = () => {
             slidesPerView={ Math.floor(width * 5 / 1325)+1 }
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}
+
         >
             <SwiperSlide>
                 <div className="story">

@@ -26,12 +26,14 @@
 .paragraph {
   font-size: 1.8rem;
   text-transform: capitalize;
+
 }
 
 .carts {
   padding-top: 6rem;
   display: flex;
   justify-content: space-around;
+  height: 35rem;
 
   &__cart {
     display: flex;
@@ -80,4 +82,8 @@
     }
 
   }
+}
+
+.swiper-container {
+  border: none !important;
 }

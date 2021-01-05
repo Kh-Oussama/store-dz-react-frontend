@@ -1,20 +1,33 @@
 .features-section {
   margin-bottom: 10rem;
   padding: 5rem;
+  //background-color: #61dafb;
 
   .content {
     height: 50rem;
     width: 100%;
     display: flex;
+    //background-color: #bd8917;
+
+    @media only screen and (max-width: $bp-small-1) {
+      flex-direction: column;
+      height: auto;
+    }
 
     &__text {
       flex: 0 0 50%;
-      padding: 6rem;
+      padding: 6rem 0;
 
       & .paragraph {
         color: var(--best-color-grey);
         text-transform: uppercase;
         font-weight: 700;
+        @media only screen and (max-width: $bp-medium-2) {
+          font-size: 1.6rem;
+        }
+        @media only screen and (max-width: $bp-small-1) {
+          font-size: 2rem;
+        }
 
         &-2 {
         text-transform:lowercase ;
@@ -26,6 +39,19 @@
         font-size: 4.4rem;
         line-height: 1.2;
         margin-bottom: 3rem;
+        @media only screen and (max-width: $bp-medium) {
+          font-size: 3.4rem;
+          margin-bottom: 1.5rem;
+        }
+        @media only screen and (max-width: $bp-small-1) {
+          font-size: 4.4rem;
+          margin-bottom: 3rem;
+        }
+        @media only screen and (max-width: $bp-small-1) {
+          font-size: 3.5rem;
+          margin-bottom: 1.5rem;
+        }
+
       }
 
       &--btn {
@@ -42,6 +68,9 @@
           width: 15rem;
           overflow: hidden;
           z-index: 1;
+          @media only screen and (max-width: $bp-small-1) {
+            margin-bottom:-8rem ;
+          }
           &:before {
             content: "";
             position: absolute;
@@ -53,11 +82,7 @@
             border-radius: 0  50% 50% 0;
             transition: .8s;
             z-index: -1;
-
-
           }
-          //&:hover {
-          //  border: .1rem solid #fff; }
           &:hover:before {
             width: 180%; }
         }
@@ -71,6 +96,14 @@
       display: grid;
       grid-template-columns: repeat(8,1fr);
       grid-template-rows: repeat(8,1fr);
+      @media only screen and (max-width: $bp-small-1) {
+        margin-top: -21rem;
+        height: 90rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+      margin-top: 8rem;
+        height: 50rem;
+      }
 
       .img {
         width: 100%;
@@ -78,10 +111,20 @@
         object-fit: cover;
 
         &--1{
-          grid-column: 1/7;
+          grid-column: 2/8;
           grid-row: 3/-1;
           z-index: 2;
           position: relative;
+
+          @media only screen and (max-width: $bp-small-1) {
+            grid-column: 4/8;
+            grid-row: 3/7;
+          }
+          @media only screen and (max-width: $bp-small) {
+            grid-column: 1/8;
+            grid-row: 2/8;
+          }
+
           &:after {
             content: "";
             position: absolute;
@@ -95,9 +138,17 @@
         }
 
         &--2{
-          grid-column: 2/8;
+          grid-column: 3/9;
           grid-row: 2/8;
           z-index: 1;
+          @media only screen and (max-width: $bp-small-1) {
+            grid-column: 5/9;
+            grid-row: 2/6;
+          }
+          @media only screen and (max-width: $bp-small) {
+            grid-column: 2/9;
+            grid-row: 1/7;
+          }
         }
 
       }
