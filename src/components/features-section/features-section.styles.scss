@@ -1,13 +1,14 @@
 .features-section {
-  margin-bottom: 10rem;
-  padding: 5rem;
-  //background-color: #61dafb;
+
+  padding: 5rem 5rem 8rem 5rem;
+  border: var(--line);
+
 
   .content {
     height: 50rem;
     width: 100%;
     display: flex;
-    //background-color: #bd8917;
+
 
     @media only screen and (max-width: $bp-small-1) {
       flex-direction: column;

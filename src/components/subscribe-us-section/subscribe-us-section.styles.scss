@@ -1,0 +1,122 @@
+.subscribeUs-section {
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: 10rem;
+  margin-bottom: 80rem;
+  padding: 5rem;
+  border: var(--line);
+  align-items: center;
+  height: 80rem;
+  &__title{
+  grid-column: 1/5;
+    line-height: 1.2;
+    & .paragraph {
+      color: var(--best-color-grey);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: -.01rem;
+      @media only screen and (max-width: $bp-medium-2) {
+        font-size: 1.6rem;
+      }
+      @media only screen and (max-width: $bp-small-1) {
+        font-size: 2rem;
+      }
+    }
+    & .title_1 {
+     text-transform: uppercase;
+      font-size: 4.4rem;
+      margin-bottom: 0;
+      letter-spacing: .7rem;
+    }
+  }
+
+  &__form {
+    grid-column: 5/-1;
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      //@media only screen and (max-width: $bp-medium-2) {
+      //  display: none;
+      //  flex: 0;
+      //}
+
+      &__input {
+        font-family: inherit;
+        font-size: 1.8rem;
+        flex: 0 0 70%;
+        color: inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        padding: .7rem 2rem;
+        transition: all .2s;
+        height: 6rem;
+
+        //@media only screen and (max-width: $bp-medium-2) {
+        //  width: 100%;
+        //  border-radius: 0;
+        //  height: 4rem;
+        //  font-size: 1.8rem;
+        //  background-color: var(--color-grey-light-1);
+        //  .svg-inline--fa {
+        //    vertical-align: -.3em;
+        //  }
+        //}
+        &:focus {
+          outline: none;
+          background-color: var(--color-grey-light-3);
+
+          //@media only screen and (max-width: $bp-medium-2) {
+          //  width: 100%;
+          //  border-radius: 0;
+          //  height: 4rem;
+          //  background-color: var(--color-grey-light-3);
+          //}
+        }
+
+        &::-webkit-input-placeholder {
+          font-weight: 100;
+          color: var(--color-grey-light-4);
+        }
+      }
+
+      //&__input:focus + &__button {
+      //  background-color: var(--color-grey-light-3);
+      //  @media only screen and (max-width: $bp-medium-2) {
+      //
+      //    background-color: var(--color-grey-light-3);
+      //  }
+      //}
+
+      &__button {
+        border: none;
+        background-color: var(--color-black);
+        height: 6rem;
+        flex: 1;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-family: inherit;
+        letter-spacing: .2rem;
+        border-left: 2px solid white;
+
+
+        //@media only screen and (max-width: $bp-medium-2) {
+        //  background-color: var(--color-grey-light-1);
+        //}
+
+        &:focus {
+          outline: none;
+        }
+
+        &:active {
+
+        }
+      }
+
+    }
+  }
+}
+
