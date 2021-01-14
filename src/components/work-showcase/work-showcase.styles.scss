@@ -1,0 +1,16 @@
+.workShowcase-section {
+  text-align: center;
+}
+
+.workShowcase__top {
+  margin-bottom: 5rem;
+  & .title_1 {
+    line-height: 4rem;
+  }
+  & .paragraph {
+    color: var(--best-color-grey);
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+}
+@import "../../components/gallery/gallery.styles";

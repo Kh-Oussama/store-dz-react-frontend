@@ -1,7 +1,9 @@
 import React from 'react';
+import WorkShowcase from "../work-showcase/work-showcase.component";
 
 const SubscribeUs = () => {
     return (
+        <div className="section-4">
           <div className="subscribeUs-section">
               <div className="subscribeUs-section__title">
                 <p className="paragraph">Don't miss out our latest updates</p>
@@ -16,6 +18,9 @@ const SubscribeUs = () => {
                   </form>
               </div>
           </div>
+            <WorkShowcase/>
+        </div>
+
     );
 }
 
