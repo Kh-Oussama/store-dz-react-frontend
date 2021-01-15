@@ -4,6 +4,7 @@ import Directory from "../../components/directory/directory.component";
 import FeaturesSection from "../../components/features-section/features-section.component";
 import ServicesSectionContainer from "../../components/services-section/services-section.container";
 import SubscribeUs from "../../components/subscribe-us-section/subscribe-us-section.component";
+import CounterSection from "../../components/counter-section/counter-section.component";
 
 
 const HomePage = () => {
@@ -13,6 +14,7 @@ const HomePage = () => {
             <Directory/>
             <ServicesSectionContainer/>
             <FeaturesSection/>
+            <CounterSection/>
             <SubscribeUs/>
         </React.Fragment>
     )
