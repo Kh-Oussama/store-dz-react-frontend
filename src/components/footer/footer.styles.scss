@@ -1,0 +1,55 @@
+.footer {
+  background-color: black;
+  grid-column: full-start / full-end;
+  padding: 8rem;
+  position: relative;z-index: 20;
+}
+.image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.nav {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, .15);
+    transform: translateY(-3px);
+  }
+}
+
+.copyright {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--color-grey-light-1);
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%;
+  text-transform: capitalize;
+  z-index: 20;
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+  }
+}

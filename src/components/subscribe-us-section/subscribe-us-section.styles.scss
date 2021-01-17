@@ -1,6 +1,6 @@
 
 .section-4 {
-  height: 80rem;
+  height: auto;
   border: var(--line);
 }
 .subscribeUs-section {
@@ -11,9 +11,16 @@
   padding: 5rem;
   align-items: center;
   margin-bottom: 10rem;
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem;
+    margin-bottom: 5rem;
+  }
   &__title{
   grid-column: 1/5;
     line-height: 1.2;
+    @media only screen and (max-width: $bp-small-1) {
+      grid-column: 1/-1;
+    }
     & .paragraph {
       color: var(--best-color-grey);
       text-transform: uppercase;
@@ -37,15 +44,14 @@
 
   &__form {
     grid-column: 5/-1;
+    @media only screen and (max-width: $bp-medium-2) {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+    }
     .form {
       display: flex;
       align-items: center;
       justify-content: center;
-
-      //@media only screen and (max-width: $bp-medium-2) {
-      //  display: none;
-      //  flex: 0;
-      //}
 
       &__input {
         font-family: inherit;

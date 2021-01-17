@@ -5,6 +5,7 @@ import FeaturesSection from "../../components/features-section/features-section.
 import ServicesSectionContainer from "../../components/services-section/services-section.container";
 import SubscribeUs from "../../components/subscribe-us-section/subscribe-us-section.component";
 import CounterSection from "../../components/counter-section/counter-section.component";
+import Footer from "../../components/footer/footer.component";
 
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
             <FeaturesSection/>
             <CounterSection/>
             <SubscribeUs/>
+            <Footer/>
         </React.Fragment>
     )
 };
