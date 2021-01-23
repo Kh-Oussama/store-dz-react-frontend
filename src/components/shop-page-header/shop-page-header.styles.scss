@@ -1,0 +1,144 @@
+.shop-header {
+  height: 25rem;
+  //padding: 0 5rem;
+  margin-bottom: 50rem;
+
+  &__top {
+    height: 4rem;
+    padding: 0 5rem;
+    border: 2px solid var(--color-grey-light-2);
+    &-block {
+      font-size: 2.4rem;
+      & a {
+        text-decoration: none;
+        color: var(--best-color-grey);
+      }
+    }
+  }
+  &__content {
+    color: var(--best-color-grey) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    .title_1 {
+      font-size: 4.4rem;
+      margin-bottom: 0;
+      line-height: 2.8rem;
+    }
+    & .paragraph {
+      text-align: center;
+      width: 50%;
+    }
+  }
+  &__bottom {
+    height: 6rem;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: var(--line);
+    font-size: 2rem;
+    font-family: inherit;
+    text-transform: capitalize;
+    color: var(--best-color-grey);
+    font-weight: 700;
+    & > * {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      & svg {
+        margin-right: 1rem;
+      }
+
+    }
+    &-pCount {
+      flex: 0 0 25%;
+      line-height: 4rem;
+      justify-self: right;
+    }
+    &-sortBy {
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__input {
+          font-family: inherit;
+          font-size: 1.8rem;
+          flex: 0 0 65%;
+          color: inherit;
+          background-color: var(--color-grey-light-2);
+          border: none;
+          padding: .7rem 2rem;
+          transition: all .2s;
+          height: 5rem;
+
+          &:focus {
+            outline: none;
+            background-color: var(--color-grey-light-3);
+          }
+
+          &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: var(--color-grey-light-4);
+          }
+        }
+
+        &__button {
+          background-color: var(--color-black);
+          height: 5rem;
+          flex: 1;
+          color: white;
+          text-transform: uppercase;
+          font-size: 1.6rem;
+          font-family: inherit;
+          letter-spacing: .2rem;
+          position: relative;
+          display: inline-block;
+          overflow: hidden;
+          z-index: 1;
+          border: none;
+          cursor: pointer;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 3%;
+            height: 100%;
+            background-color : var(--color-primary);
+            left: 0;
+            border-radius: 0  50% 50% 0;
+            transition: .8s;
+            z-index: -1;
+          }
+          &:hover:before {
+            width: 180%; }
+
+          &:focus {
+            outline: none;
+          }
+
+        }
+
+      }
+    }
+    &-pages {
+      flex: 0 0 30%;
+      cursor: pointer;
+      & .text {
+        margin-right: 1rem;
+      }
+      & .number {
+        padding: .2rem 1rem;
+        background-color: var(--color-grey-light-2);
+        border-right: 2px solid white;
+        &-active {
+          background-color: var(--color-grey-dark-2);
+          color: white;
+        }
+      }
+    }
+
+  }
+}

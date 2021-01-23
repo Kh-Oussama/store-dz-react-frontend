@@ -17,7 +17,6 @@ const HomePage = () => {
             <FeaturesSection/>
             <CounterSection/>
             <SubscribeUs/>
-            <Footer/>
         </React.Fragment>
     )
 };
