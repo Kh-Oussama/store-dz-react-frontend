@@ -24,7 +24,7 @@ const ShopPageHeader = () => {
                     <form action="#" className="form">
                         <input type="text" className="form__input" placeholder=""/>
                         <button className="form__button">
-                            Subscribe Now
+                            Search
                         </button>
                     </form>
                 </div>

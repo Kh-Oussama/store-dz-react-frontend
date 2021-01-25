@@ -7,7 +7,7 @@ import Menu_3 from "../../assets/img/andrea-rico-4As6kaSrabk-unsplash.jpg";
 import Menu_4 from "../../assets/img/ellieelien-HWqsW7FLWf4-unsplash.jpg";
 import Menu_5 from "../../assets/img/ahmet-hamdi-tj7Ftdf3JQM-unsplash.jpg";
 
-const Directory = () => {
+const CollectionsOverview = () => {
         return (
             <div className="directory-menu">
                 <div className="directory-menu__1">
@@ -25,4 +25,4 @@ const Directory = () => {
 };
 
 
-export default Directory;
+export default CollectionsOverview;
