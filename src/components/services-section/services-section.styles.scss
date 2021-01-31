@@ -16,12 +16,13 @@
   font-size: 2.2rem;
   text-transform: capitalize;
 }
+
 .red-divider {
   width: 100px;
   height: 2px;
   background: var(--color-primary);
   margin: 0 auto;
-  margin-top: 1rem;
+
 }
 
 .paragraph {
@@ -64,6 +65,7 @@
         height: 100%;
 
       }
+
       .red-divider {
         background: #999;
       }

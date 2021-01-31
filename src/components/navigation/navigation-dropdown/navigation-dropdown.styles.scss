@@ -1,6 +1,5 @@
 .navigation {
   &__dropdown {
-    height: 40rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 4.5rem repeat(3,1fr) 4.5rem;
@@ -46,7 +45,7 @@
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
 
     @media only screen and (max-width: $bp-small) {
@@ -70,7 +69,7 @@
       grid-column: 1/-1;
       color: var(--color-primary-dark);
       font-weight: normal;
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       text-transform: capitalize;
 
       & span {

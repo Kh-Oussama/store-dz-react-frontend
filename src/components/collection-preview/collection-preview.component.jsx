@@ -317,6 +317,746 @@ const CollectionPreview = () => {
                     <div className="price discount"><span>$68.00</span> $58</div>
                 </div>
             </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_1} alt={""}/>
+                        <img className="pic-2" src={P_2} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to=""> Aged Pine Scented Candle</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_4} alt={""}/>
+                        <img className="pic-2" src={P_3} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_5} alt={""}/>
+                        <img className="pic-2" src={P_6} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_7} alt={""}/>
+                        <img className="pic-2" src={P_8} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_9} alt={""}/>
+                        <img className="pic-2" src={P_10} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_11} alt={""}/>
+                        <img className="pic-2" src={P_12} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_13} alt={""}/>
+                        <img className="pic-2" src={P_14} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_15} alt={""}/>
+                        <img className="pic-2" src={P_16} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Mercura Scent Diffuser</Link></h3>
+                    <div className="price discount"><span>$68.00</span> $58</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_9} alt={""}/>
+                        <img className="pic-2" src={P_10} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_11} alt={""}/>
+                        <img className="pic-2" src={P_12} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_13} alt={""}/>
+                        <img className="pic-2" src={P_14} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_15} alt={""}/>
+                        <img className="pic-2" src={P_16} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Mercura Scent Diffuser</Link></h3>
+                    <div className="price discount"><span>$68.00</span> $58</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_9} alt={""}/>
+                        <img className="pic-2" src={P_10} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_11} alt={""}/>
+                        <img className="pic-2" src={P_12} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_13} alt={""}/>
+                        <img className="pic-2" src={P_14} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_15} alt={""}/>
+                        <img className="pic-2" src={P_16} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Mercura Scent Diffuser</Link></h3>
+                    <div className="price discount"><span>$68.00</span> $58</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_9} alt={""}/>
+                        <img className="pic-2" src={P_10} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_11} alt={""}/>
+                        <img className="pic-2" src={P_12} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_13} alt={""}/>
+                        <img className="pic-2" src={P_14} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Women's Button Top</Link></h3>
+                    <div className="price discount"><span>$17.00</span> $13.60</div>
+                </div>
+            </div>
+            <div className="product-grid">
+                <div className="product-image">
+                    <Link to="" >
+                        <img className="pic-1" src={P_15} alt={""}/>
+                        <img className="pic-2" src={P_16} alt={""}/>
+                    </Link>
+                    <span className="product-trend-label">
+                        TRENDING
+                    </span>
+                    <ul className="social">
+                        <li>
+                            <Link to='' data-tip="Add to cart">
+                                <i className="fa fa-shopping-cart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="wishlist">
+                                <i className="fa fa-heart"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Compare">
+                                <i className="fa fa-random"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='' data-tip="Quick View">
+                                <i className="fa fa-search"/>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="product-content">
+                    <h3 className="title"><Link to="">Mercura Scent Diffuser</Link></h3>
+                    <div className="price discount"><span>$68.00</span> $58</div>
+                </div>
+            </div>
         </div>
     );
 }

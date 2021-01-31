@@ -11,8 +11,8 @@
 
   &__imgBlock {
     & img {
-      height: 13rem;
-      width: 13rem;
+      height: 10rem;
+      width: 10rem;
       border-radius: 50%;
       object-fit: cover;
       display: block;
@@ -21,7 +21,7 @@
 
   &__user {
     color: var(--color-black);
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
   }
 }
