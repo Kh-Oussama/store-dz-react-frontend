@@ -24,16 +24,15 @@
     }
 
     .title_1 {
-      //font-size: 4.4rem;
       margin-bottom: 0;
       line-height: 2.8rem;
       letter-spacing: 1.2rem;
       @media only screen and (max-width: $bp-medium) {
-        font-size: 4rem;
+        letter-spacing: .8rem;
       }
       @media only screen and (max-width: $bp-small) {
-        font-size: 2.2rem;
         margin-bottom: .4rem;
+        letter-spacing: .2rem;
       }
     }
 
@@ -90,6 +89,7 @@
       flex: 0 0 25%;
       line-height: 4rem;
       justify-self: right;
+      color: black;
       @media only screen and (max-width: $bp-small) {
         display: none;
       }
@@ -121,7 +121,7 @@
           border: none;
           padding: .7rem 2rem;
           transition: all .2s;
-          height: 5rem;
+          height: 4rem;
 
           &:focus {
             outline: none;
@@ -136,7 +136,7 @@
 
         &__button {
           background-color: var(--color-black);
-          height: 5rem;
+          height: 4rem;
           padding-right: 3rem;
           padding-left: 3rem;
           flex: 1;
@@ -187,6 +187,7 @@
 
       & .text {
         margin-right: 1rem;
+        color: black;
       }
 
       & .number {
@@ -195,7 +196,7 @@
         border-right: 2px solid white;
 
         &-active {
-          background-color: var(--color-grey-dark-2);
+          background-color: black;
           color: white;
         }
       }
@@ -205,7 +206,7 @@
 }
 
 .class-A {
-  @media only screen and (min-width: $bp-smallest) {
+  @media only screen and (min-width: $bp-small) {
     display: none;
   }
 }

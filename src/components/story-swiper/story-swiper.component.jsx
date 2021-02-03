@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useSpring, animated} from "react-spring";
 import 'swiper/swiper.scss';
 import Story_1 from "../../assets/img/FB_IMG_1605310761314.jpg";
 import Story_2 from "../../assets/img/FB_IMG_1605310763585.jpg";
@@ -11,6 +12,7 @@ import Story_8 from "../../assets/img/narrow-aztec-pot-with-lid-911511.jpg";
 import Story_9 from "../../assets/img/floating-photo-frame-box-white-5x7-379302.jpg";
 
 const Story = () => {
+
     const [width, setWidth] = useState(window.innerWidth);
     useEffect(() =>  {
         window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -40,7 +42,6 @@ const Story = () => {
                     <span className="story__user">PLANTERS</span>
                 </div>
             </SwiperSlide>
-
             <SwiperSlide>
                 <div className="story">
                     <div className="story__imgBlock">
@@ -49,7 +50,6 @@ const Story = () => {
                     <span className="story__user">CLOCKS</span>
                 </div>
             </SwiperSlide>
-
             <SwiperSlide>
                 <div className="story">
                     <div className="story__imgBlock">
@@ -57,7 +57,6 @@ const Story = () => {
                     </div>
                     <span className="story__user">INDOOR POTS</span>
                 </div>
-
             </SwiperSlide>
             <SwiperSlide>
                 <div className="story">
