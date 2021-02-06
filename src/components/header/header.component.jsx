@@ -45,7 +45,7 @@ const Header = () => {
                     <Link to=''>
                     <SearchBar/>
                     </Link>
-                    <Link to='/auth'>
+                    <Link to='/login'>
                         <i className="fas fa-sign-in-alt"/>
                     </Link>
                     <CartIcon/>
