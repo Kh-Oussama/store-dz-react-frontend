@@ -35,30 +35,119 @@
 
     .detail {
       flex: 0 0 50%;
-      padding: 5rem 2rem;
+      padding: 2rem 2rem;
 
       &-title {
-      font-size: 2.4rem;
-      background-color: black;
-        color: var(--color-grey-light-4);
-        padding: 0.4rem 2rem 0 2rem;
-        width: fit-content;
-    }
-      &-p {
+        font-size: 1.8rem;
         color: var(--best-color-grey);
-        font-size: 2.4rem;
+        width: fit-content;
+      }
+
+      &-p {
+        color: black;
+        font-size: 3.2rem;
+        font-weight: bold;
         line-height: 1.2;
+        margin-top: .6rem;
         margin-bottom: 2rem;
+      }
+
+      &-product-number {
+        color: var(--best-color-grey);
+        font-size: 1.6rem;
+        padding-bottom: .2rem;
+        font-weight: bold;
+        border-bottom: 3px solid var(--color-grey-light-2);
+        min-width: 100%;
+        margin-bottom: .3rem;
+      }
+
+      &-stars {
+        font-size: 1.8rem;
+
+        svg {
+          padding-right: .4rem;
+          color: var(--color-primary);
+        }
+
+        margin-bottom: .5rem;
+      }
+
+      &-description-header {
+        padding-right: 27rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px solid var(--color-grey-light-2);
+
+        span {
+          font-size: 1.6rem;
+          color: var(--best-color-grey);
+          font-weight: bold;
+          padding: .2rem 1rem 0 1rem;
+          cursor: pointer;
+        }
+
+        .active {
+          background-color: var(--color-grey-light-3);
+        }
+      }
+
+      &-description {
+        font-size: 1.8rem;
+        color: var(--best-color-grey);
+        margin-bottom: .5rem;
+
 
       }
-      &-price {
+      &-priceBlock {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px solid var(--color-grey-light-2);
 
-        color: var(--best-color-grey);
-        font-size: 2.4rem;
-        font-weight: bold;
-        border-bottom: var(--line);
-        min-width:100% ;
-        margin-bottom: 3rem;
+        margin-bottom: .5rem;
+        .price {
+          color: var(--best-color-grey);
+          font-size: 2.8rem;
+       }
+       .qnt {
+         color: var(--best-color-grey);
+         font-size: 2rem;
+         text-transform: capitalize;
+
+       }
+      }
+      &-actions {
+        display: flex;
+        align-items: center;
+        //justify-content: flex-end;
+        .add {
+          padding: .8rem 10rem;
+          margin-right: 2rem;
+          background-color: var(--color-grey-light-3);
+        border-color:transparent ;
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--color-grey-light-4);
+          }
+
+        }
+        .heart {
+          padding: .8rem 1rem;
+          background-color: var(--color-grey-light-3);
+          cursor: pointer;
+          &:hover {
+            background-color: var(--color-grey-light-4);
+          }
+        }
+        svg {
+          font-size: 1.5rem;
+          //width: 2.5rem;
+          //height: 2.8rem;
+
+        }
       }
     }
 

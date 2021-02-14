@@ -78,16 +78,31 @@ const ViewProduct = () => {
                     <p className="detail-p">
                         Grove Earth & Aged Pine Scented Candle - 300g
                     </p>
-                    <div className="detail-price">$18</div>
+                    <div className="detail-product-number">Product Number : 15885</div>
+                    <div className="detail-stars">
+                        <i className="fas fa-star"/>
+                        <i className="fas fa-star"/>
+                        <i className="fas fa-star"/>
+                        <i className="fas fa-star"/>
+                        <i className="far fa-star"/>
+                    </div>
+                    <div className="detail-description-header">
+                        <span className="active">Description</span>
+                        <span>Basic Info</span>
+                        <span>Caliber</span>
+                    </div>
                     <div className="detail-description">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores blanditiis consequuntur doloribus error excepturi exercitationem iusto labore laborum, laudantium maxime nisi omnis quibusdam quos ratione sapiente unde veniam?
                     </div>
-                    <span className="detail-quantityStock">10+in stock</span>
-                    <div>
-                        <span>
-                           <i className="fas fa-chevron-left"/> 3 <i className="fas fa-chevron-right"/></span>
-                        <button>Add to Carte</button>
-                        <span><i className="far fa-heart"/></span>
+                    <div className="detail-priceBlock">
+                        <div className="price">22$</div>
+                        <div className="qnt">10+ in stock</div>
+                    </div>
+                    <div className="detail-actions">
+                        <button className="add">Add to Carte</button>
+                       <div className="heart">
+                           <i className="far fa-heart"/>
+                       </div>
                     </div>
                 </div>
 
