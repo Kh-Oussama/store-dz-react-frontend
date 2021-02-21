@@ -2,6 +2,7 @@ import React from 'react';
 import ShopPageHeader from "../../components/shop-page-header/shop-page-header.componont";
 import CollectionPreview from "../../components/collection-preview/collection-preview.component";
 import SubscribeUs from "../../components/subscribe-us-section/subscribe-us-section.component";
+import WorkShowcase from "../../components/work-showcase/work-showcase.component";
 
 const ShopPage = () => {
     return (
@@ -16,9 +17,8 @@ const ShopPage = () => {
                  <span className="number">03</span>
              </div>
          </div>
-
          <SubscribeUs/>
-
+         <WorkShowcase/>
      </div>
     )
 }

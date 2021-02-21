@@ -7,7 +7,7 @@ import ShopPage from "./pages/shop-page/shop-page.component";
 import Footer from "./components/footer/footer.component";
 import SignIn from "./components/sign-in/sign-in.component";
 import SignUp from "./components/sign-up/sign-up.component";
-import ViewProduct from "./pages/view-product/view-product.component";
+import ViewProduct from "./pages/view-product-page/view-product-page.component";
 
 function App() {
   return (

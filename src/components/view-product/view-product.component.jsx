@@ -1,20 +1,41 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import P_1 from "../../assets/img/pic-2.jpg";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import P_2 from "../../assets/img/pic-1.jpg";
+import P_3 from "../../assets/img/grove-earth-aged-pine-scented-candle-300g-541351.jpg";
+import P_4 from "../../assets/img/grove-earth-aged-pine-scented-candle-300g-682332.jpg";
+import P_5 from "../../assets/img/grove-earth-aged-pine-scented-candle-300g-736773.jpg";
+import {Swiper, SwiperSlide} from 'swiper/react';
+import SwiperCore, {Navigation, Pagination} from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
+import {Link} from "react-router-dom";
 
-SwiperCore.use([Pagination,Navigation]);
+SwiperCore.use([Pagination, Navigation]);
 
 const ViewProduct = () => {
-
+    const [width, setWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        window.addEventListener("resize", () => setWidth(window.innerWidth));
+    });
 
     return (
         <div className="view-product">
             <div className="view-product-topLeft">
+                <div className="shop-header__top">
+                    <div className="shop-header__top-block">
+                        <Link to=''>
+                            <i className="fas fa-home"/> <span><i className="fas fa-chevron-right"/></span> Home
+                        </Link>
+                        <Link to=''>
+                            <span> <i className="fas fa-chevron-right"/></span> Candles & Home Fragrance
+                        </Link>
+                        <Link to=''>
+                            <span> <i className="fas fa-chevron-right"/></span> Evermore London
+                        </Link>
 
+                    </div>
+                </div>
             </div>
             <div className="view-product-topRight"/>
             <div className="view-product-content">
@@ -22,8 +43,8 @@ const ViewProduct = () => {
                     <div className="con">
                         <Swiper
                             spaceBetween={50}
-                            slidesPerView={ 1 }
-                            navigation
+                            slidesPerView={1}
+                            navigation={(width > 600) ? true : false}
                             loop
                             pagination={{
                                 clickable: true,
@@ -40,30 +61,28 @@ const ViewProduct = () => {
                             <SwiperSlide>
                                 <div className="item">
                                     <img src={P_1} alt="" className="img"/>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="item">
+                                    <img src={P_2} alt="" className="img"/>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="item">
+                                    <img src={P_3} alt="" className="img"/>
 
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="item">
-                                    <img src={P_1} alt="" className="img"/>
+                                    <img src={P_4} alt="" className="img"/>
 
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="item">
-                                    <img src={P_1} alt="" className="img"/>
-
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="item">
-                                    <img src={P_1} alt="" className="img"/>
-
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="item">
-                                    <img src={P_1} alt="" className="img"/>
+                                    <img src={P_5} alt="" className="img"/>
 
                                 </div>
                             </SwiperSlide>
@@ -92,7 +111,9 @@ const ViewProduct = () => {
                         <span>Caliber</span>
                     </div>
                     <div className="detail-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores blanditiis consequuntur doloribus error excepturi exercitationem iusto labore laborum, laudantium maxime nisi omnis quibusdam quos ratione sapiente unde veniam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores blanditiis
+                        consequuntur doloribus error excepturi exercitationem iusto labore laborum, laudantium maxime
+                        nisi omnis quibusdam quos ratione sapiente unde veniam?
                     </div>
                     <div className="detail-priceBlock">
                         <div className="price">22$</div>
@@ -100,9 +121,9 @@ const ViewProduct = () => {
                     </div>
                     <div className="detail-actions">
                         <button className="add">Add to Carte</button>
-                       <div className="heart">
-                           <i className="far fa-heart"/>
-                       </div>
+                        <div className="heart">
+                            <i className="far fa-heart"/>
+                        </div>
                     </div>
                 </div>
 

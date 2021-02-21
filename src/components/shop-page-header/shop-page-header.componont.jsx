@@ -8,8 +8,12 @@ const ShopPageHeader = () => {
             <div className="shop-header__top">
                 <div className="shop-header__top-block">
                     <Link to=''>
-                   <i className="fas fa-home"/> > Home
+                   <i className="fas fa-home"/> <span><i className="fas fa-chevron-right"/></span> Home
                     </Link>
+                    <Link to=''>
+                        <span> <i className="fas fa-chevron-right"/></span> Candles & Home Fragrance
+                    </Link>
+
                 </div>
             </div>
             <div className="shop-header__content">
