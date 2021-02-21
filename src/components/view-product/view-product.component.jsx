@@ -15,9 +15,7 @@ SwiperCore.use([Pagination, Navigation]);
 
 const ViewProduct = () => {
     const [width, setWidth] = useState(window.innerWidth);
-    useEffect(() => {
-        window.addEventListener("resize", () => setWidth(window.innerWidth));
-    });
+    const [isPhone, setIsPhone] = useState(window.innerWidth > 600);
 
     return (
         <div className="view-product">
@@ -44,7 +42,7 @@ const ViewProduct = () => {
                         <Swiper
                             spaceBetween={50}
                             slidesPerView={1}
-                            navigation={(width > 600) ? true : false}
+                            navigation={isPhone}
                             loop
                             pagination={{
                                 clickable: true,
