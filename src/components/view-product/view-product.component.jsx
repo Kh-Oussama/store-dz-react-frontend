@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import P_1 from "../../assets/img/pic-2.jpg";
 import P_2 from "../../assets/img/pic-1.jpg";
 import P_3 from "../../assets/img/grove-earth-aged-pine-scented-candle-300g-541351.jpg";
@@ -10,12 +10,13 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import {Link} from "react-router-dom";
+import DescriptionCard from "../description-product-card/description-product-card.component";
 
 SwiperCore.use([Pagination, Navigation]);
 
 const ViewProduct = () => {
-    const [width, setWidth] = useState(window.innerWidth);
     const [isPhone, setIsPhone] = useState(window.innerWidth > 600);
+    const [active, setActive] = useState("SecondCard");
 
     return (
         <div className="view-product">
@@ -104,15 +105,27 @@ const ViewProduct = () => {
                         <i className="far fa-star"/>
                     </div>
                     <div className="detail-description-header">
-                        <span className="active">Description</span>
-                        <span>Basic Info</span>
-                        <span>Caliber</span>
+                        <span className={active === "FirstCard" ? "active" : null} onClick={() => setActive("FirstCard")}>Description</span>
+                        <span className={active === "SecondCard" ? "active" : null} onClick={() => setActive("SecondCard")}>Basic Info</span>
+                        <span className={active === "ThirdCard" ? "active" : null} onClick={() => setActive("ThirdCard")}>Caliber</span>
                     </div>
-                    <div className="detail-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores blanditiis
+
+                    {
+                        active === "FirstCard" && <DescriptionCard content="1111111Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores blanditiis
                         consequuntur doloribus error excepturi exercitationem iusto labore laborum, laudantium maxime
-                        nisi omnis quibusdam quos ratione sapiente unde veniam?
-                    </div>
+                        nisi omnis quibusdam quos ratione sapiente unde venia?"/>
+                    }
+                    {
+                        active === "SecondCard" && <DescriptionCard content="2222222Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores blanditiis
+                        consequuntur doloribus error excepturi exercitationem iusto labore laborum, laudantium maxime
+                        nisi omnis quibusdam quos ratione sapiente unde venia?"/>
+                    }
+                    {
+                        active === "ThirdCard" && <DescriptionCard content="3333333Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet asperiores blanditiis
+                        consequuntur doloribus error excepturi exercitationem iusto labore laborum, laudantium maxime
+                        nisi omnis quibusdam quos ratione sapiente unde venia?"/>
+                    }
+
                     <div className="detail-priceBlock">
                         <div className="price">22$</div>
                         <div className="qnt">10+ in stock</div>
