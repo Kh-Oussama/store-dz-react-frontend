@@ -10,7 +10,7 @@ const Footer = () => {
                 <li className="nav__item"><Link to="#" className="nav__link">Find your dream home</Link></li>
                 <li className="nav__item"><Link to="#" className="nav__link">Request proposal</Link></li>
                 <li className="nav__item"><Link to="#" className="nav__link">Download home planner</Link></li>
-                <li className="nav__item"><Link to="#" className="nav__link">Contact us</Link></li>
+                <li className="nav__item"><Link to="/contactus" className="nav__link">Contact us</Link></li>
                 <li className="nav__item"><Link to="#" className="nav__link">Submit your property</Link></li>
                 <li className="nav__item"><Link to="#" className="nav__link">Come work with us!</Link></li>
             </ul>

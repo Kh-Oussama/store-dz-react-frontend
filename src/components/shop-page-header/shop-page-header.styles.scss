@@ -10,11 +10,16 @@
       & a {
         text-decoration: none;
         color: black;
+
         span {
           svg {
             color: var(--color-grey-dark-2);
             font-size: 1.5rem;
           }
+        }
+
+        &:hover .linkText {
+          border-bottom: 2px solid var(--color-grey-light-4);
         }
       }
     }

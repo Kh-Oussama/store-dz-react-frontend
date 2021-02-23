@@ -8,6 +8,7 @@ import Footer from "./components/footer/footer.component";
 import SignIn from "./components/sign-in/sign-in.component";
 import SignUp from "./components/sign-up/sign-up.component";
 import ViewProduct from "./pages/view-product-page/view-product-page.component";
+import ContactUs from "./pages/contact-us/contact-us.component";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/login" component={SignIn} />
             <Route exact path="/register" component={SignUp} />
             <Route exact path="/view" component={ViewProduct} />
+            <Route exact path="/contactus" component={ContactUs} />
         </Switch>
         <Footer/>
       </React.Fragment>

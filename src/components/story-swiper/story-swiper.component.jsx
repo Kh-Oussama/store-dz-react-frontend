@@ -22,6 +22,7 @@ const Story = () => {
         <Swiper
             spaceBetween={50}
             slidesPerView={ Math.floor(width * 5 / 1325)+1 }
+            grabCursor={true}
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}
 

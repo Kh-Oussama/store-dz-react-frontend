@@ -23,14 +23,15 @@ const ViewProduct = () => {
             <div className="view-product-topLeft">
                 <div className="shop-header__top">
                     <div className="shop-header__top-block">
-                        <Link to=''>
-                            <i className="fas fa-home"/> <span><i className="fas fa-chevron-right"/></span> Home
+                        <Link to='/'>
+                            <i className="fas fa-home"/> <span><i className="fas fa-chevron-right"/></span> <span
+                            className="linkText">Home</span>
                         </Link>
-                        <Link to=''>
-                            <span> <i className="fas fa-chevron-right"/></span> Candles & Home Fragrance
+                        <Link to='/shop'>
+                            <span> <i className="fas fa-chevron-right"/></span> <span className="linkText">Candles & Home Fragrance</span>
                         </Link>
-                        <Link to=''>
-                            <span> <i className="fas fa-chevron-right"/></span> Evermore London
+                        <Link to='/view'>
+                            <span> <i className="fas fa-chevron-right"/></span> <span className="linkText">Evermore London</span>
                         </Link>
 
                     </div>
@@ -39,55 +40,52 @@ const ViewProduct = () => {
             <div className="view-product-topRight"/>
             <div className="view-product-content">
                 <div className="imageBlock">
-                    <div className="con">
-                        <Swiper
-                            spaceBetween={50}
-                            slidesPerView={1}
-                            navigation={isPhone}
-                            loop
-                            pagination={{
-                                clickable: true,
-                            }}
-                            grabCursor={true}
 
-                            onSlideChange={() => {
+                    <Swiper
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        navigation={isPhone}
+                        loop
+                        pagination={{
+                            clickable: true,
+                        }}
+                        onSlideChange={() => {
 
-                            }}
-                            // onSwiper={(swiper) => console.log(swiper)}
+                        }}
+                        // onSwiper={(swiper) => console.log(swiper)}
 
-                        >
+                    >
 
-                            <SwiperSlide>
-                                <div className="item">
-                                    <img src={P_1} alt="" className="img"/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="item">
-                                    <img src={P_2} alt="" className="img"/>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="item">
-                                    <img src={P_3} alt="" className="img"/>
+                        <SwiperSlide>
+                            <div className="item">
+                                <img src={P_1} alt="" className="img"/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item">
+                                <img src={P_2} alt="" className="img"/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item">
+                                <img src={P_3} alt="" className="img"/>
 
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="item">
-                                    <img src={P_4} alt="" className="img"/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item">
+                                <img src={P_4} alt="" className="img"/>
 
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="item">
-                                    <img src={P_5} alt="" className="img"/>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="item">
+                                <img src={P_5} alt="" className="img"/>
 
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
 
-                    </div>
                 </div>
                 <div className="detail">
                     <h1 className="detail-title">
@@ -105,9 +103,12 @@ const ViewProduct = () => {
                         <i className="far fa-star"/>
                     </div>
                     <div className="detail-description-header">
-                        <span className={active === "FirstCard" ? "active" : null} onClick={() => setActive("FirstCard")}>Description</span>
-                        <span className={active === "SecondCard" ? "active" : null} onClick={() => setActive("SecondCard")}>Basic Info</span>
-                        <span className={active === "ThirdCard" ? "active" : null} onClick={() => setActive("ThirdCard")}>Caliber</span>
+                        <span className={active === "FirstCard" ? "active" : null}
+                              onClick={() => setActive("FirstCard")}>Description</span>
+                        <span className={active === "SecondCard" ? "active" : null}
+                              onClick={() => setActive("SecondCard")}>Basic Info</span>
+                        <span className={active === "ThirdCard" ? "active" : null}
+                              onClick={() => setActive("ThirdCard")}>Caliber</span>
                     </div>
 
                     {

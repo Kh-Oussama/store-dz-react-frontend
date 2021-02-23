@@ -11,7 +11,7 @@ const ViewProductPage = () => {
         <React.Fragment>
             <ViewProduct/>
             <ProductRelated/>
-            {/*<SubscribeUs/>*/}
+            <SubscribeUs/>
             {/*<Gallery/>*/}
 
         </React.Fragment>
