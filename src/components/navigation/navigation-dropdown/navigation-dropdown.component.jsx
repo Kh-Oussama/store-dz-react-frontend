@@ -58,7 +58,7 @@ const Dropdown = ({dropdownState}) => (
             </Link>
         </div>
         <div className="dropdown__item  dropdown--item-10">
-            <Link to=''>
+            <Link to='/contactus'>
                 <i className="fas fa-id-card"/> Contact
             </Link>
         </div>
