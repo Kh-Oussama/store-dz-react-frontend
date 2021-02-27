@@ -37,12 +37,12 @@ const CheckoutPage = () => {
                     <ShoppingCartItem/>
                     <ShoppingCartItem/>
                     <div className="table--footer">
-                        <div className="table--footer-column" style={{flex:'0 0 40%'}}>Total Price</div>
+                        <div className="table--footer-column p" >Total Price</div>
                         <div className="table--footer-column">DZD 1100</div>
                     </div>
                     <div className="table--footer action">
                         <div className="table--footer-column act btn1">
-                            <button className="huge ui black button" style={{padding:'1rem'}}>
+                            <button className="huge ui black button" >
                                 <i className="fas fa-chevron-left"/> Continue Shopping
                             </button>
                         </div>
