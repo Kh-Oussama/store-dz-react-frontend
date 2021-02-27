@@ -5,6 +5,7 @@ import CartIcon from "../cart-icon/cart-icon.component";
 import Dropdown from "../navigation/navigation-dropdown/navigation-dropdown.component";
 import NavButton from "../navigation/navigation-button/navigation-button.component";
 import SearchBar from "../search-bar/search-bar.component";
+import CartDropdown from "../cart/cart-dropdown.component";
 
 
 const Header = () => {
@@ -49,6 +50,7 @@ const Header = () => {
                         <i className="fas fa-sign-in-alt"/>
                     </Link>
                     <CartIcon/>
+                    {/*<CartDropdown/>*/}
                 </div>
             </div>
             <Dropdown dropdownState={dropdownState}/>

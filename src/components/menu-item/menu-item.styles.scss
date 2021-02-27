@@ -14,9 +14,9 @@
   }
 
   &:hover {
-    cursor: pointer;
 
     & .content {
+      cursor: pointer;
       opacity: .9;
     }
   }
