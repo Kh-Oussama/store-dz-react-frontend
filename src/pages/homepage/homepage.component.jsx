@@ -6,11 +6,14 @@ import SubscribeUs from "../../components/subscribe-us-section/subscribe-us-sect
 import CounterSection from "../../components/counter-section/counter-section.component";
 import CollectionsOverview from "../../components/collections-overview/collections-overview.component";
 import WorkShowcase from "../../components/work-showcase/work-showcase.component";
+import Header from "../../components/header/header.component";
+import Footer from "../../components/footer/footer.component";
 
 
 const HomePage = () => {
     return (
         <React.Fragment>
+            <Header/>
             <Story/>
             <CollectionsOverview/>
             <ServicesSectionContainer/>
@@ -18,6 +21,7 @@ const HomePage = () => {
             <CounterSection/>
             <SubscribeUs/>
             <WorkShowcase/>
+            <Footer/>
         </React.Fragment>
     )
 };

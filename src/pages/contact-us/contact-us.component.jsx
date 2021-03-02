@@ -1,9 +1,13 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Header from "../../components/header/header.component";
+import Footer from "../../components/footer/footer.component";
 
 
 const ContactUs = () => {
     return (
+        <React.Fragment>
+            <Header/>
         <div className="contactUs">
             <div className="content">
                 <div className="home">
@@ -66,6 +70,8 @@ const ContactUs = () => {
                 </div>
             </div>
         </div>
+            <Footer/>
+        </React.Fragment>
     )
 }
 

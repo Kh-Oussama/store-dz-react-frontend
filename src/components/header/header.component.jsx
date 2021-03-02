@@ -1,14 +1,21 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
+import {connect} from 'react-redux';
+import {createStructuredSelector} from "reselect";
+
+import D_1 from "../../assets/img/open-door.png";
+import D_2 from "../../assets/img/door.png";
 import Logo from './store-logo.png';
 import CartIcon from "../cart-icon/cart-icon.component";
 import Dropdown from "../navigation/navigation-dropdown/navigation-dropdown.component";
 import NavButton from "../navigation/navigation-button/navigation-button.component";
 import SearchBar from "../search-bar/search-bar.component";
 import CartDropdown from "../cart/cart-dropdown.component";
+import {selectCurrentUser} from "../../redux/users/user.selectors";
+import {signOutStart} from "../../redux/users/user.actions";
 
 
-const Header = () => {
+const Header = ({currentUser, signOutStart}) => {
     const [dropdownState, setDropdownState] = useState(false);
     return (
         <header>
@@ -46,9 +53,13 @@ const Header = () => {
                     <Link to=''>
                     <SearchBar/>
                     </Link>
-                    <Link to='/login'>
-                        <i className="fas fa-sign-in-alt"/>
-                    </Link>
+                    {
+                        currentUser
+                        ? <img src={D_1} alt="" style={{cursor: 'pointer'}} onClick={signOutStart}/>
+                        : <Link to='/login'>
+                                <img src={D_2} alt=""  />
+                            </Link>
+                    }
                     <CartIcon/>
                     {/*<CartDropdown/>*/}
                 </div>
@@ -57,5 +68,15 @@ const Header = () => {
         </header>
     )
 };
+const mapStateToProps = createStructuredSelector({
+    currentUser: selectCurrentUser,
+    // checkLoading: selectCheckLoading,
+});
 
-export default Header;
+const mapDispatchToProps = dispatch => ({
+    signOutStart : () => dispatch(signOutStart()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
+
+
