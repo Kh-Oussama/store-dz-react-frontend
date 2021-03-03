@@ -12,9 +12,11 @@ import NavButton from "../navigation/navigation-button/navigation-button.compone
 import SearchBar from "../search-bar/search-bar.component";
 import {selectCurrentUser} from "../../redux/users/user.selectors";
 import {signOutStart} from "../../redux/users/user.actions";
+import {selectCartHidden} from "../../redux/cart/cart.selectors";
+import CartDropdown from "../cart/cart-dropdown.component";
 
 
-const Header = ({currentUser, signOutStart}) => {
+const Header = ({currentUser, signOutStart, hidden}) => {
     const [dropdownState, setDropdownState] = useState(false);
     return (
         <header>
@@ -60,7 +62,12 @@ const Header = ({currentUser, signOutStart}) => {
                             </Link>
                     }
                     <CartIcon/>
-                    {/*<CartDropdown/>*/}
+                    {
+                        hidden
+                            ? <CartDropdown/>
+                            : null
+                    }
+
                 </div>
             </div>
             <Dropdown dropdownState={dropdownState}/>
@@ -69,7 +76,7 @@ const Header = ({currentUser, signOutStart}) => {
 };
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
-    // checkLoading: selectCheckLoading,
+    hidden : selectCartHidden,
 });
 
 const mapDispatchToProps = dispatch => ({

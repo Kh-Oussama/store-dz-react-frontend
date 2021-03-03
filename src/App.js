@@ -12,8 +12,8 @@ import ViewProduct from "./pages/view-product-page/view-product-page.component";
 import ContactUs from "./pages/contact-us/contact-us.component";
 import CheckoutPage from "./pages/checkout-page/checkout-page.component";
 import {selectCheckLoading, selectCurrentUser} from "./redux/users/user.selectors";
-import Loader from "./components/loader/loader.component";
 import {checkUserSession, refreshUserSession} from "./redux/users/user.actions";
+import LoaderHuge from "./components/loader/loader-huge.component";
 
 function App({checkUserSession, refreshUserSession, currentUser, checkLoading,}) {
 
@@ -33,7 +33,7 @@ function App({checkUserSession, refreshUserSession, currentUser, checkLoading,})
 
             {
                 checkLoading
-                    ? <Loader/>
+                    ? <LoaderHuge/>
                     :
                     <Switch>
                         <Route exact path="/" component={HomePage}/>
