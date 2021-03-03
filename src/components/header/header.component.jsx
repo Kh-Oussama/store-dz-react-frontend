@@ -10,7 +10,6 @@ import CartIcon from "../cart-icon/cart-icon.component";
 import Dropdown from "../navigation/navigation-dropdown/navigation-dropdown.component";
 import NavButton from "../navigation/navigation-button/navigation-button.component";
 import SearchBar from "../search-bar/search-bar.component";
-import CartDropdown from "../cart/cart-dropdown.component";
 import {selectCurrentUser} from "../../redux/users/user.selectors";
 import {signOutStart} from "../../redux/users/user.actions";
 
@@ -29,7 +28,7 @@ const Header = ({currentUser, signOutStart}) => {
                     </Link>
                 </div>
                 <div className="header__item header__item--nav1">
-                    <Link to='' >
+                    <Link to=''>
                         Shop
                     </Link>
                 </div>
@@ -51,13 +50,13 @@ const Header = ({currentUser, signOutStart}) => {
                 </div>
                 <div className='header__item header__item--nav5'>
                     <Link to=''>
-                    <SearchBar/>
+                        <SearchBar/>
                     </Link>
                     {
                         currentUser
-                        ? <img src={D_1} alt="" style={{cursor: 'pointer'}} onClick={signOutStart}/>
-                        : <Link to='/login'>
-                                <img src={D_2} alt=""  />
+                            ? <img src={D_1} alt="" style={{cursor: 'pointer'}} onClick={signOutStart}/>
+                            : <Link to='/login'>
+                                <img src={D_2} alt=""/>
                             </Link>
                     }
                     <CartIcon/>
@@ -74,7 +73,7 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const mapDispatchToProps = dispatch => ({
-    signOutStart : () => dispatch(signOutStart()),
+    signOutStart: () => dispatch(signOutStart()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -6,7 +6,7 @@ const DescriptionCard = ({content}) => {
             {
                 content
             }
-          </div>
+        </div>
     )
 }
 

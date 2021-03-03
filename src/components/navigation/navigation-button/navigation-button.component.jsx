@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavButton = ( {setDropdownState,dropdownState}) => {
+const NavButton = ({setDropdownState, dropdownState}) => {
 
     return (
         <div className="header__item header__item--navigation">

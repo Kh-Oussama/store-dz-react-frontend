@@ -9,12 +9,15 @@ import {PersistGate} from "redux-persist/integration/react";
 import {persistor} from "./redux/store";
 import { store } from "./redux/store";
 import {Provider} from "react-redux";
+import SetupAxios from './AxiosInterceptor';
 
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
             <PersistGate persistor={persistor}>
+                <SetupAxios>
                     <App/>
+                </SetupAxios>
             </PersistGate>
         </BrowserRouter>
     </Provider>

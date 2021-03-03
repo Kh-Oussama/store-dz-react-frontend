@@ -19,11 +19,11 @@ import P_16 from "../../assets/img/pic-16.jpg";
 import ProductItem from "../product-item/product-item.component";
 
 
-
 const CollectionPreview = () => {
     return (
         <div className="Collection-Preview">
-            <ProductItem imageUrl1={P_1} imageUrl2={P_2} title={"Aged Pine Scented Candle"} lastPrice={"$17.00"} currentPrice={"$13.60"}/>
+            <ProductItem imageUrl1={P_1} imageUrl2={P_2} title={"Aged Pine Scented Candle"} lastPrice={"$17.00"}
+                         currentPrice={"$13.60"}/>
             <div className="product-grid">
                 <div className="product-image">
                     <Link to="">

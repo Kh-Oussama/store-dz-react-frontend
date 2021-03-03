@@ -44,7 +44,8 @@ const Gallery = () => {
                                                                      className="gallery__img"/></figure>
             <figure className="gallery__item gallery__item--13"><img src={G_13} alt="Gallery img"
                                                                      className="gallery__img"/></figure>
-            <figure className="gallery__item gallery__item--14"><img src={G_14} alt="Gallery img" className="gallery__img"/></figure>
+            <figure className="gallery__item gallery__item--14"><img src={G_14} alt="Gallery img"
+                                                                     className="gallery__img"/></figure>
 
         </section>
 

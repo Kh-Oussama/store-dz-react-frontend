@@ -13,27 +13,28 @@ const ServicesSection = () => (
                 WE DESIGN DIGITAL PRODUCTS THAT <br/>
                 HELP GROW BUSINESSES
             </h1>
-            <p className="paragraph" >we are committed to providing our customers with exceptional service <br/> while offering out employees the best training </p>
+            <p className="paragraph">we are committed to providing our customers with exceptional service <br/> while
+                offering out employees the best training </p>
         </div>
-       <div className="carts">
+        <div className="carts">
             <div className="carts__cart">
                 <img src={Candle} alt="" className="carts__cart--img"/>
-                <h4 className="carts__cart--title" >Candles</h4>
+                <h4 className="carts__cart--title">Candles</h4>
                 <div className="red-divider"/>
             </div>
             <div className="carts__cart">
                 <img src={Frame} alt="" className="carts__cart--img"/>
-                <h4 className="carts__cart--title" >Frames</h4>
+                <h4 className="carts__cart--title">Frames</h4>
                 <div className="red-divider"/>
             </div>
             <div className="carts__cart">
                 <img src={vase} alt="" className="carts__cart--img"/>
-                <h4 className="carts__cart--title" >Vases</h4>
+                <h4 className="carts__cart--title">Vases</h4>
                 <div className="red-divider"/>
             </div>
             <div className="carts__cart">
                 <img src={Jars} alt="" className="carts__cart--img"/>
-                <h4 className="carts__cart--title" >Jars</h4>
+                <h4 className="carts__cart--title">Jars</h4>
                 <div className="red-divider"/>
             </div>
         </div>

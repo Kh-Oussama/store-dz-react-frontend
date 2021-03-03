@@ -6,11 +6,11 @@ import useWindowSize from "../utilities/useWindowSize.hook";
 const ServicesSectionContainer = () => {
     const deviceType = useWindowSize();
 
-    return ( deviceType !== "phone"
+    return (deviceType !== "phone"
             ? (
                 <ServicesSectionForPc/>
             )
-            :   (
+            : (
                 <ServicesSectionForPhone/>
             )
     )

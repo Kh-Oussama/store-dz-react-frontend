@@ -2,6 +2,7 @@ import UserActionTypes from "./user.types";
 import {takeLatest, put, all, call} from 'redux-saga/effects';
 import Axios from "axios";
 import cookie from 'js-cookie';
+import jwt_decode from "jwt-decode";
 
 import {
     signInFailure,
@@ -25,30 +26,30 @@ export function* signIn({payload: {email, password}}) {
     }
 }
 
-// export function* isUserAuthenticated() {
-//     try{
-//         const token = cookie.get("access_token");
-//         const response = yield Axios.get("http://laravel-react.com/api/auth/profile");
-//         const user = response.data;
-//         yield put(signInSuccess({id: user.id, ...user}));
-//     }catch (error) {
-//         yield put(signInFailure(error.response.data.message));
-//     }
-// }
+export function* isUserAuthenticated() {
+    try{
+        const response = yield Axios.get("http://store-dz.com/api/auth/profile");
+        const user = response.data;
+        yield put(signInSuccess({id: user.id, ...user}));
+    }catch (error) {
+        yield put(signInFailure(error.response.data.message));
+    }
+}
 
-// export function* refreshUserSession() {
-//     try{
-//         const  tokenExpiration = jwt_decode(cookie.get("access_token")).exp;
-//         console.log(tokenExpiration*1000-Date.now());
-//         if ((tokenExpiration*1000-Date.now()) < 300000){
-//             const response = yield Axios.post("http://laravel-react.com/api/auth/refresh");
-//             cookie.set("access_token", response.data.access_token);
-//         }
-//
-//     }catch (error) {
-//         yield put(signInFailure(error.response.data.message));
-//     }
-// }
+export function* refreshUserSession() {
+    try{
+        const  tokenExpiration = jwt_decode(cookie.get("access_token")).exp;
+        // console.log(tokenExpiration*1000-Date.now());
+        if ((tokenExpiration*1000-Date.now()) < 300000){
+            // console.log("yeess");
+            const response = yield Axios.post("http://store-dz.com/api/auth/refresh");
+            cookie.set("access_token", response.data.access_token);
+        }
+
+    }catch (error) {
+        yield put(signInFailure(error.response.data.message));
+    }
+}
 
 export function* signUp({payload: { name, email, password}}) {
     const data = { name, email, password};
@@ -64,8 +65,7 @@ export function* signUp({payload: { name, email, password}}) {
 
 export function* signOut() {
     try {
-        const token = cookie.get("access_token");
-        yield Axios.post("http://store-dz.com/api/auth/logout",null,token);
+        yield Axios.post("http://store-dz.com/api/auth/logout");
         yield (put(signOutSuccess()))
     }catch (error) {
         yield put(signOutFailure())
@@ -80,14 +80,14 @@ export function* onSignInStart() {
     yield takeLatest(UserActionTypes.SIGN_IN_START, signIn)
 
 }
-// export function* onCheckUserSession() {
-//     yield takeLatest(UserActionTypes.CHECK_USER_SESSION, isUserAuthenticated)
-// }
+export function* onCheckUserSession() {
+    yield takeLatest(UserActionTypes.CHECK_USER_SESSION, isUserAuthenticated)
+}
 
-// export function* onRefreshUserSession() {
-//     yield takeLatest(UserActionTypes.REFRESH_USER_SESSION, refreshUserSession)
-// }
-//
+export function* onRefreshUserSession() {
+    yield takeLatest(UserActionTypes.REFRESH_USER_SESSION, refreshUserSession)
+}
+
 export function* onSignOutStart() {
     yield takeLatest(UserActionTypes.SIGN_OUT_START, signOut)
 }
@@ -103,8 +103,8 @@ export function* onSignUpSuccess() {
 export function* userSagas() {
     yield all([
         call(onSignInStart),
-        // call(onCheckUserSession),
-        // call(onRefreshUserSession),
+        call(onCheckUserSession),
+        call(onRefreshUserSession),
         call(onSignOutStart),
         call(onSignUpStart),
         call(onSignUpSuccess),

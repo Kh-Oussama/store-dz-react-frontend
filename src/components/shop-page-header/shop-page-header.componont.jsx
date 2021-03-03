@@ -8,17 +8,20 @@ const ShopPageHeader = () => {
             <div className="shop-header__top">
                 <div className="shop-header__top-block">
                     <Link to='/'>
-                        <i className="fas fa-home"/> <span><i className="fas fa-chevron-right"/></span> <span className="linkText">Home</span>
+                        <i className="fas fa-home"/> <span><i className="fas fa-chevron-right"/></span> <span
+                        className="linkText">Home</span>
                     </Link>
                     <Link to='/shop'>
-                        <span> <i className="fas fa-chevron-right"/></span>  <span className="linkText">Candles & Home Fragrance</span>
+                        <span> <i className="fas fa-chevron-right"/></span> <span className="linkText">Candles & Home Fragrance</span>
                     </Link>
                 </div>
             </div>
             <div className="shop-header__content">
                 <h1 className="title_1">Candles & Home Fragrance</h1>
                 <p className="paragraph">
-                    Home fragrance is the finishing touch to any room and no space is complete without it. Find a wide range of reed diffusers, scented candles and room sprays to invigorate the senses, with scents to suit all occasions, from floral and fruity to fresh and spicy.
+                    Home fragrance is the finishing touch to any room and no space is complete without it. Find a wide
+                    range of reed diffusers, scented candles and room sprays to invigorate the senses, with scents to
+                    suit all occasions, from floral and fruity to fresh and spicy.
                 </p>
             </div>
             <div className="shop-header__bottom">
@@ -38,7 +41,7 @@ const ShopPageHeader = () => {
                     <span className="number">03</span>
                 </div>
                 <div className="shop-header__bottom-pCount">
-                    <i className="fas fa-tags"/>    1118  Products
+                    <i className="fas fa-tags"/> 1118 Products
                 </div>
             </div>
         </div>

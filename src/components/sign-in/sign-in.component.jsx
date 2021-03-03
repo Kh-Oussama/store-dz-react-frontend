@@ -3,11 +3,10 @@ import Image from "../../assets/img/loginImg.svg";
 import "./sign-in.styles.scss";
 import {Link} from "react-router-dom";
 import {createStructuredSelector} from "reselect";
-import {selectError, selectLoading, selectSignInError} from "../../redux/users/user.selectors";
+import {selectLoading, selectSignInError} from "../../redux/users/user.selectors";
 import {signInStart} from "../../redux/users/user.actions";
 import {connect} from 'react-redux';
 import Loader from "../loader/loader.component";
-
 
 
 const SignIn = ({signInStart, loading, errors}) => {
@@ -51,52 +50,55 @@ const SignIn = ({signInStart, loading, errors}) => {
                 </div>
                 {
                     unauthorizedError
-                        ? (<h4 className="input-error"><i className="fas fa-exclamation-triangle"/> Please check your information and <br/>  try again.</h4>)
+                        ? (<h4 className="input-error"><i className="fas fa-exclamation-triangle"/> Please check your
+                            information and <br/> try again.</h4>)
                         : null
                 }
                 <div className="form">
                     <form onSubmit={handleSubmit}>
-                    <div className="form-group">
-                        <label htmlFor="email">Email</label>
-                        <input
-                            type="text"
-                            name="email"
-                            placeholder="Email"
-                            value={email}
-                            onChange={handleChange}
-                        />
-                        {
-                            emailError
-                                ? (<span className="input-error"><i className="fas fa-exclamation-triangle"/> {emailError}</span>)
-                                : null
-                        }
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="password">Password</label>
-                        <input
-                            type="password"
-                            name="password"
-                            placeholder="Password"
-                            value={password}
-                            onChange={handleChange}
-                        />
-                        {
-                            passwordError
-                                ? (<span className="input-error"><i className="fas fa-exclamation-triangle"/> {passwordError}</span>)
-                                : null
-                        }
-                    </div>
-                    <div className="form-footer">
-                        <button className="btn" type='submit'>
+                        <div className="form-group">
+                            <label htmlFor="email">Email</label>
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="Email"
+                                value={email}
+                                onChange={handleChange}
+                            />
                             {
-                                loading
-                                ? <Loader/>
-                                : (<span><i className="fas fa-sign-in-alt"/> Sign in</span>)
-
+                                emailError
+                                    ? (<span className="input-error"><i
+                                        className="fas fa-exclamation-triangle"/> {emailError}</span>)
+                                    : null
                             }
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="password">Password</label>
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="Password"
+                                value={password}
+                                onChange={handleChange}
+                            />
+                            {
+                                passwordError
+                                    ? (<span className="input-error"><i
+                                        className="fas fa-exclamation-triangle"/> {passwordError}</span>)
+                                    : null
+                            }
+                        </div>
+                        <div className="form-footer">
+                            <button className="btn" type='submit'>
+                                {
+                                    loading
+                                        ? <Loader/>
+                                        : (<span><i className="fas fa-sign-in-alt"/> Sign in</span>)
 
-                        </button>
-                    </div>
+                                }
+
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>

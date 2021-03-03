@@ -8,22 +8,22 @@ import Footer from "../../components/footer/footer.component";
 
 const ShopPage = () => {
     return (
-     <React.Fragment>
-         <Header/>
-         <ShopPageHeader/>
-         <CollectionPreview/>
-         <div className="shop-header__bottom class-A" style={{justifyContent:'flex-end'}}>
-             <div className="shop-header__bottom-pages" style={{display:'block',flex:'0 0 25%'}}>
-                 <span className="text">Page</span>
-                 <span className="number number-active">01</span>
-                 <span className="number">02</span>
-                 <span className="number">03</span>
-             </div>
-         </div>
-         <SubscribeUs/>
-         <WorkShowcase/>
-         <Footer/>
-     </React.Fragment>
+        <React.Fragment>
+            <Header/>
+            <ShopPageHeader/>
+            <CollectionPreview/>
+            <div className="shop-header__bottom class-A" style={{justifyContent: 'flex-end'}}>
+                <div className="shop-header__bottom-pages" style={{display: 'block', flex: '0 0 25%'}}>
+                    <span className="text">Page</span>
+                    <span className="number number-active">01</span>
+                    <span className="number">02</span>
+                    <span className="number">03</span>
+                </div>
+            </div>
+            <SubscribeUs/>
+            <WorkShowcase/>
+            <Footer/>
+        </React.Fragment>
     )
 }
 export default ShopPage;

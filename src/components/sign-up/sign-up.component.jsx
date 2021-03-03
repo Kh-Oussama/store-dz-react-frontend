@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import Image from "../../assets/img/loginImg.svg";
 import "./sign-up.styles.scss";
-import {Link, withRouter} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {createStructuredSelector} from "reselect";
 import {connect} from 'react-redux';
-import {selectError, selectLoading, selectSignUpError} from "../../redux/users/user.selectors";
+import {selectLoading, selectSignUpError} from "../../redux/users/user.selectors";
 import Loader from "../loader/loader.component";
 import {signUpStart} from "../../redux/users/user.actions";
 
@@ -19,7 +19,7 @@ const SignUp = ({signUpStart, loading, errors}) => {
         setNameError('');
         setEmailError('');
         setPasswordError('');
-    },[])
+    }, [])
     useEffect(() => {
         if (errors) {
             if (errors.email) setEmailError(errors.email);
@@ -47,7 +47,7 @@ const SignUp = ({signUpStart, loading, errors}) => {
 
     return (
         <div className="auth-page-container">
-            <div className="container" data-text="Login" style={{height:'auto'}}>
+            <div className="container" data-text="Login" style={{height: 'auto'}}>
                 <div className="home">
                     <Link to="/">
                         <i className="fas fa-home"/>
@@ -59,60 +59,60 @@ const SignUp = ({signUpStart, loading, errors}) => {
                 </div>
                 <div className="form">
                     <form onSubmit={handleSubmit}>
-                    <div className="form-group">
-                        <label htmlFor="name">Username</label>
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="name"
-                            value={name}
-                            onChange={handleChange}
-                        />
-                        {
-                            nameError
-                                ? (<span className="input-error">{nameError}</span>)
-                                : null
-                        }
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="username">Email</label>
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="email"
-                            value={email}
-                            onChange={handleChange}
-                        />
-                        {
-                            emailError
-                                ? (<span className="input-error">{emailError}</span>)
-                                : null
-                        }
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="password">Password</label>
-                        <input
-                            type="password"
-                            name="password"
-                            placeholder="password"
-                            value={password}
-                            onChange={handleChange}
-                        />
-                        {
-                            passwordError
-                                ? (<span className="input-error">{passwordError}</span>)
-                                : null
-                        }
-                    </div>
-                    <div className="form-footer">
-                        <button className="btn" type="submit">
+                        <div className="form-group">
+                            <label htmlFor="name">Username</label>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="name"
+                                value={name}
+                                onChange={handleChange}
+                            />
                             {
-                                loading
-                                    ? <Loader/>
-                                    : (<span><i className="fas fa-user-plus"/> Register</span>)
+                                nameError
+                                    ? (<span className="input-error">{nameError}</span>)
+                                    : null
                             }
-                        </button>
-                    </div>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="username">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="email"
+                                value={email}
+                                onChange={handleChange}
+                            />
+                            {
+                                emailError
+                                    ? (<span className="input-error">{emailError}</span>)
+                                    : null
+                            }
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="password">Password</label>
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="password"
+                                value={password}
+                                onChange={handleChange}
+                            />
+                            {
+                                passwordError
+                                    ? (<span className="input-error">{passwordError}</span>)
+                                    : null
+                            }
+                        </div>
+                        <div className="form-footer">
+                            <button className="btn" type="submit">
+                                {
+                                    loading
+                                        ? <Loader/>
+                                        : (<span><i className="fas fa-user-plus"/> Register</span>)
+                                }
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>

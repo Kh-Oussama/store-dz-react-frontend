@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { useSpring, animated} from "react-spring";
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/swiper.scss';
 import Story_1 from "../../assets/img/FB_IMG_1605310761314.jpg";
 import Story_2 from "../../assets/img/FB_IMG_1605310763585.jpg";
@@ -14,14 +13,14 @@ import Story_9 from "../../assets/img/floating-photo-frame-box-white-5x7-379302.
 const Story = () => {
 
     const [width, setWidth] = useState(window.innerWidth);
-    useEffect(() =>  {
+    useEffect(() => {
         window.addEventListener("resize", () => setWidth(window.innerWidth));
     });
 
     return (
         <Swiper
             spaceBetween={50}
-            slidesPerView={ Math.floor(width * 5 / 1325)+1 }
+            slidesPerView={Math.floor(width * 5 / 1325) + 1}
             grabCursor={true}
             // onSlideChange={() => console.log('slide change')}
             // onSwiper={(swiper) => console.log(swiper)}

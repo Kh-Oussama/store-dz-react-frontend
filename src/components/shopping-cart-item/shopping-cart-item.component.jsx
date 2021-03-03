@@ -15,7 +15,9 @@ const ShoppingCartItem = () => {
             </div>
             <div className="table--content-column">18$</div>
             <div className="table--content-column">
-                <button className="large ui black button"> <i className="fas fa-trash-alt" style={{marginRight:'1rem'}}/>delete</button>
+                <button className="large ui black button"><i className="fas fa-trash-alt"
+                                                             style={{marginRight: '1rem'}}/>delete
+                </button>
             </div>
         </div>
     )

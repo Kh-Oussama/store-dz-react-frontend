@@ -10,11 +10,11 @@ const INITIAL_STATE = {
 };
 const userReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        // case UserActionTypes.CHECK_USER_SESSION:
-        //     return {
-        //         ...state,
-        //         checkLoading: true,
-        //     };
+        case UserActionTypes.CHECK_USER_SESSION:
+            return {
+                ...state,
+                checkLoading: true,
+            };
         case UserActionTypes.SIGN_UP_START :
         case UserActionTypes.SIGN_IN_START :
             return {

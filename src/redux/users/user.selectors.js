@@ -27,7 +27,7 @@ export const selectLoading = createSelector(
     user => user.loading,
 );
 
-// export const selectCheckLoading= createSelector(
-//     [selectUser],
-//     user => user.checkLoading,
-// );
+export const selectCheckLoading= createSelector(
+    [selectUser],
+    user => user.checkLoading,
+);
